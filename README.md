@@ -15,7 +15,9 @@ needed to pass attrs to a nix expression. However, `callPackage` also universall
 applies `mkOverridable` to the result which adds both `.override` and
 `.overrideDerivation`. This isn't always desirable behavior, especially when
 the resulting attr set should be free of these continuations; for example,
-child package scope or partially applied functions.
+child package scope or partially applied functions. Omitting these attrs allows
+for slight eval performance wins, but also a better user experience when functions
+aren't expected in the resulting attr set.
 
 ## Detailed Implementation
 
