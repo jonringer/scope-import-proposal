@@ -74,3 +74,5 @@ error:
 - Is there a better name than `scopeImport`?
   - This name plays on the theme of `makeScope` and `newScope` being used to provide a `scopeImport`
   - `callPackage` is "something when called, returns a package", so the analagous name would be `callAttSet` which doesn't feel as descriptive.
+- Similar name to `builtins.scopedImport`
+  - This is builtin is rarely used, and not even documented in the nix manual
