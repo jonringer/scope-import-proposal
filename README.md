@@ -1,5 +1,5 @@
 ---
-Title: Add scopeImport help to package sets
+Title: Add scopeImport helper function to package sets
 Author: jonringer
 Discussions-To: https://github.com/NixOS/nixpkgs/pull/274179
 Status: Draft
@@ -72,3 +72,5 @@ error:
 ## Meta concerns
 
 - Is there a better name than `scopeImport`?
+  - This name plays on the theme of `makeScope` and `newScope` being used to provide a `scopeImport`
+  - `callPackage` is "something when called, returns a package", so the analagous name would be `callAttSet` which doesn't feel as descriptive.
